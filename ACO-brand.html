@@ -55,6 +55,112 @@
   <link rel="stylesheet" type="text/css" href="css/util.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!--===============================================================================================-->
+  <style>
+    .containerp {
+      display: flex;
+      align-items: center;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    .image {
+      flex: 1;
+      padding-right: 20px;
+    }
+    
+    .image img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    .properties {
+      flex: 2;
+    }
+    
+    .properties ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .properties li {
+      margin-bottom: 10px;
+    }
+    
+    .description {
+      font-style: italic;
+      color: #666;
+    }
+    .product-container {
+      display: flex;
+      align-items: center;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    .product-text {
+      flex: 2;
+      padding-right: 20px;
+    }
+    
+    .product-image {
+      flex: 1;
+      order: 2;
+      text-align: right;
+    }
+    
+    .product-image img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    .product-properties {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .product-properties li {
+      margin-bottom: 10px;
+    }
+    
+    .product-description {
+      font-style: italic;
+      color: #666;
+    }
+    .line-separator {
+      width: 80%;
+      height: 1px;
+      background-color: #000;
+      margin: 20px auto; /* Adjust margin as needed */
+      position: relative;
+    }
+    
+    .line-separator::before,
+    .line-separator::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      width: 15px;
+      height: 15px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+    
+    .line-separator::before {
+      left: -5px;
+    }
+    
+    .line-separator::after {
+      right: -5px;
+    }
+  </style>
 </head>
 
 <body class="animsition">
@@ -170,7 +276,7 @@
                 <a href="AllAttar.html">Shop by Brand</a>
                 <ul class="sub_menu">
                   <li><a href="ACO.html">ACO</a></li>
-                  <li><a href="AL-NUAIM.html">AL-NUIAM</a></li>
+                  <li><a href="AL-NUAIM.html">AL-NUAIM</a></li>
                   <li><a href="Arochem.html">AROCHEM</a></li>
                   <li><a href="Madni.html">MADNI</a></li>
                   <li><a href="StJohn.html">ST. JOHN</a></li>
@@ -307,7 +413,7 @@
 
 
   </section>
-  <section>
+  <!-- <section>
     <p style="margin: 20px;">
       Acoperfumes is a leading online perfume retailer based in India that specializes in a wide range of fragrances for
       both men and women. They offer an extensive collection of perfumes from popular brands such as Calvin Klein, Hugo
@@ -319,8 +425,42 @@
       If you're looking for a reliable and affordable source for perfumes and personal care products, Acoperfumes is a
       great option.
     </p>
-  </section>
+  </section> -->
 
+  <div class="containerp">
+    <div class="image">
+      <img src="./images/1aco.jpg" alt="Product Image">
+    </div>
+    <div class="properties" style="text-align: center;
+    color: #9a031e !important;">
+      <ul>
+        <li><b>Introducting our long lasting attar: ACO Black Oud Alcohol Free Attar aka "long laster"</b></li>
+        <li>Avaialable at just Rs.50</li>
+        <li><b>Properties:</b> long lasting, oud fragrance</li>
+        <li><b>benefits:</b> Long lasting oud smell whole day</li>
+        <li><b>Availability:</b> In Stock</li>
+        <li class="description">ACO Oudh is one of the most popular and renowned attar perfume globally. There are several brands that have launched their own versions of Oudh attar. ACO Attar have put hard work and devoted significant time in research, testings and market validation before finalizing the formula.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="line-separator"></div>
+  <div class="product-container">
+    <div class="product-text" style="text-align: center;
+    color: #9a031e !important;">
+      <ul class="product-properties">
+        <li><b>Introducting our Musk fragrance attar: ACO Black Musk Alcohol Free Attar aka "Musk king" </b></li>
+        <li>Avaialable at just Rs.50</li>
+        <li><b>Properties:</b> Musk fragrance, long lasting</li>
+        <li><b>benefits:</b> Long lasting musk smell whole day</li>
+        <li><b>Availability:</b> In Stock</li>
+        <li class="product-description">ACO brings to you one of the most sought after collection of perfume from world famous brand. The product is 100% original and of highest quality possible. This fragrance is set to compliment your style and will make heads turn when you step out wearing it. Manufactured by leading perfume brand, this fragrance is bound to get you compliments.</li>
+       </ul>
+    </div>
+    <div class="product-image">
+      <img src="./images/2aco.jpg" alt="Product Image">
+    </div>
+  </div>
+  <div class="line-separator"></div>
   <!-- Content page -->
   <section class="bgwhite p-t-55">
     <div class="container">
@@ -672,7 +812,7 @@
         <div>
           <p class="s-text7 w-size27">
             Any questions?
-            Let us know in store at Katha Wala Mansion, Janjikar Street, Crawford Market, Crawford Market,
+            Let us know in store at Katha Wala Mansion, Janjikar Street, Crawford Market,
             Mumbai-400003. or email us on attarsouk@gmail.com
           </p>
           
